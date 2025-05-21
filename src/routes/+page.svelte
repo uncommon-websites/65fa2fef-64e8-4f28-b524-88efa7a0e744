@@ -55,77 +55,82 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Cloud volumes built for active data"
+	text="Archil provides infinitely scalable cloud storage volumes for modern applications. Get instant, shareable access to your S3 datasets—with the cost, speed, and simplicity you wish S3 always had."
 />
 
 
 
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Cloud volume features"
+	subtitle="How Archil changes what cloud storage can do"
 	features={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+			title: "Infinite scalability",
+			description: "Volumes grow automatically to petabyte scale, so you never manage capacity."
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+			title: "Instant s3 access",
+			description: "Mount volumes on top of any S3 bucket and access all data immediately."
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+			title: "Share across instances",
+			description: "Allow multiple compute instances to read and write the same volume."
+		},
+		{
+			title: "High-performance io",
+			description: "Enjoy up to 30x faster reads and 100x faster writes than S3 or EFS."
+		},
+		{
+			title: "Only pay for what’s active",
+			description: "Achieve up to 90% cost reduction versus block storage by paying for only active data."
+		},
+		{
+			title: "Compliance and no lock-in",
+			description: "Data stays in your S3, with SOC2, HIPAA, and GDPR support by default."
 		}
 	]}
 />
 
 <UseCases
-	generating
-	title="Use Cases"
-	subtitle="Real-world applications for your business needs"
-	useCases={[
-		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings.",
-			image:
-				"https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-			link: {
-				href: "/use-cases/workflows",
-				label: "Learn more"
-			}
-		},
-		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2488&q=80",
-			link: {
-				href: "/use-cases/data-analysis",
-				label: "Explore analytics"
-			}
-		},
-		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption.",
-			image:
-				"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-			link: {
-				href: "/use-cases/collaboration",
-				label: "See security features"
-			}
-		}
-	]}
+  title="Use Cases"
+  subtitle="Real-world applications for your business needs"
+  useCases={[
+    {
+      title: "Accelerate AI model training on petabyte-scale data",
+      description: "Start large-scale machine learning experiments right from your S3 buckets—no slow data migrations, no wasted storage. Archil volumes provide instant, high-performance access for your team.",
+      image: "/generated/image-a-diverse-group-of-engineers-collaborati.webp",
+      link: {
+        href: "/use-cases/ai-model-training",
+        label: "Learn more"
+      }
+    },
+    {
+      title: "Real-time analytics on fast-growing event streams",
+      description: "Power continuous analytics and observability for streaming data without worrying about storage bottlenecks or scaling headaches. Archil scales instantly as event volume grows.",
+      image: "/generated/image-a-team-of-engineers-in-a-collaborative-e.webp",
+      link: {
+        href: "/use-cases/real-time-analytics",
+        label: "Learn more"
+      }
+    },
+    {
+      title: "Share cloud data and workloads across any environment",
+      description: "Collaborate across teams, clusters, or clouds with POSIX-compliant storage that’s always in sync with your S3—supporting multi-cloud, multi-user, and serverless workflows, instantly.",
+      image: "/generated/image-a-diverse-platform-team-working-together.webp",
+      link: {
+        href: "/use-cases/shared-cloud-storage",
+        label: "Learn more"
+      }
+    }
+  ]}
 />
 
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+  title="Cloud storage for massive S3 datasets—at lightning speed and infinite scale"
+  subtitle="Archil makes your S3 data instantly accessible and shareable across compute, with 30x faster reads and 100x faster writes. Fully POSIX compliant and pay only for active data."
+  imageSrc="/generated/image-a-cheerful-data-engineer-sitting-at-a-de.webp"
+  callsToAction={[{ href: '/contact', label: 'Try Archil in minutes', variant: 'primary' }]}
+/>

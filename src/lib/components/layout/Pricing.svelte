@@ -35,139 +35,176 @@ Please update features according to the company's product offering. Do not remov
 
 	// Props
 	const {
-		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		title = "Cloud volumes built for modern data",
+		subtitle = "Pay only for your active data, with instant, shareable cloud volumes for AI, analytics, and modern cloud workloads",
+		tierNames = ["Starter", "Team", "Enterprise"],
 		features = [
-			{
-				name: "Projects",
-				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Team members",
-				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Storage",
-				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "API access",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Custom domains",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Analytics",
-				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
-				}
-			},
-			{
-				name: "Support response time",
-				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
-				}
-			},
-			{
-				name: "Dedicated account manager",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: true
-				}
-			},
-			{
-				name: "SLA",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
-				}
-			}
-		],
+  {
+    name: "Active usage pricing",
+    tiers: {
+      Starter: "Free up to 50 GB",
+      Team: "$0.29/GB",
+      Enterprise: "Custom volume discounts"
+    }
+  },
+  {
+    name: "Volume sharing across instances",
+    tiers: {
+      Starter: false,
+      Team: true,
+      Enterprise: true
+    }
+  },
+  {
+    name: "S3 sync (native format)",
+    tiers: {
+      Starter: true,
+      Team: true,
+      Enterprise: true
+    }
+  },
+  {
+    name: "POSIX-compliant volumes",
+    tiers: {
+      Starter: true,
+      Team: true,
+      Enterprise: true
+    }
+  },
+  {
+    name: "Multi-cloud volume support (AWS, GCP, Azure)",
+    tiers: {
+      Starter: true,
+      Team: true,
+      Enterprise: true
+    }
+  },
+  {
+    name: "SOC 2, HIPAA, GDPR compliance",
+    tiers: {
+      Starter: false,
+      Team: false,
+      Enterprise: true
+    }
+  },
+  {
+    name: "Dedicated onboarding & support",
+    tiers: {
+      Starter: "Email",
+      Team: "Email + chat",
+      Enterprise: "Dedicated engineer"
+    }
+  },
+  {
+    name: "SLAs and availability guarantees",
+    tiers: {
+      Starter: false,
+      Team: false,
+      Enterprise: true
+    }
+  },
+  {
+    name: "IDP/SAML and RBAC support",
+    tiers: {
+      Starter: false,
+      Team: false,
+      Enterprise: true
+    }
+  },
+  {
+    name: "Persistent volumes across containers or VMs",
+    tiers: {
+      Starter: false,
+      Team: true,
+      Enterprise: true
+    }
+  },
+  {
+    name: "Priority/failover & monitoring",
+    tiers: {
+      Starter: false,
+      Team: "24/7 monitoring & auto-failover",
+      Enterprise: "Dedicated support and monitoring"
+    }
+  },
+  {
+    name: "Usage analytics & alerts",
+    tiers: {
+      Starter: false,
+      Team: "Basic",
+      Enterprise: "Advanced"
+    }
+  },
+  {
+    name: "Advanced security & audit logs",
+    tiers: {
+      Starter: false,
+      Team: false,
+      Enterprise: true
+    }
+  },
+],
 		tiers = [
-			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
-				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
-				],
-				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
-				}
-			},
-			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
-				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
-				],
-				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
-				},
-				highlight: true
-			},
-			{
-				name: "Enterprise",
-				monthlyPrice: null,
-				yearlyPrice: null,
-				description: "For large organizations with specific needs",
-				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
-				],
-				cta: {
-					label: "Contact sales",
-					href: "/contact"
-				}
-			}
-		]
+  {
+    name: "Starter",
+    monthlyPrice: 0,
+    yearlyPrice: 0,
+    description: "For individuals or small workloads getting started with active compute and S3 data",
+    features: [
+      "Free for up to 50 GB of active data",
+      "Unlimited mounts and volume creation",
+      "S3 pass-through access",
+      "POSIX-compliant volumes",
+      "No lock-in – data stays in your S3 in native format",
+      "Email support"
+    ],
+    cta: {
+      label: "Try free",
+      href: "/signup?plan=starter"
+    }
+  },
+  {
+    name: "Team",
+    monthlyPrice: 0.29,
+    yearlyPrice: 0.23,
+    description: "For teams building and scaling production-grade pipelines with shared, high-performance storage",
+    features: [
+      "$0.29/GB of active usage per month",
+      "Multi-instance sharing and simultaneous access",
+      "Persistent volumes usable across containers or VMs",
+      "24/7 monitoring and automated failover",
+      "Priority email & chat support",
+      "Works across AWS, Azure, and GCP",
+      "Basic usage analytics and alerts"
+    ],
+    cta: {
+      label: "Get started",
+      href: "/signup?plan=team"
+    },
+    highlight: true
+  },
+  {
+    name: "Enterprise",
+    monthlyPrice: null,
+    yearlyPrice: null,
+    description: "For organizations managing petabytes of active data, complex deployments, and security-sensitive workloads",
+    features: [
+      "Custom pricing for large-scale environments",
+      "AWS PrivateLink and advanced VPC controls",
+      "IDP integrations (Okta, SAML, etc.)",
+      "Full SOC 2 Type II, HIPAA, and GDPR compliance",
+      "SLAs with guaranteed high availability",
+      "Role-based access and advanced audit logs",
+      "Dedicated solutions engineer and onboarding assistance",
+      "Advanced volume insights by team, bucket, and workload"
+    ],
+    cta: {
+      label: "Contact sales",
+      href: "/contact"
+    }
+  }
+]
+
 	}: {
 		title?: string;
 		subtitle?: string;

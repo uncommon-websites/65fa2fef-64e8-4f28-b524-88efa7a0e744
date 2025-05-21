@@ -23,22 +23,22 @@
 		"bg-primary-50 text-primary-600 dark:bg-primary-950 dark:text-primary-400 flex items-center justify-center rounded-full";
 
 	const benefits = [
-		{
-			title: "Flexible Work",
-			description: "Remote-first with flexible hours that respect work-life balance.",
-			icon: IconBriefcase
-		},
-		{
-			title: "Growth Opportunities",
-			description: "Continuous learning with mentorship and education stipends.",
-			icon: IconUsers
-		},
-		{
-			title: "Comprehensive Benefits",
-			description: "Health coverage, retirement plans, and generous paid time off.",
-			icon: IconHeart
-		}
-	];
+  {
+    title: "Build what’s next for cloud data",
+    description: "Join a fast-moving team changing the future of large-scale storage. Ship real product, make impactful decisions, and shape the roadmap from day one.",
+    icon: IconBriefcase
+  },
+  {
+    title: "Work directly with the best minds",
+    description: "Collaborate daily with ex-Amazon and ex-Netflix engineers, and learn from leaders with deep experience building cloud infrastructure at scale.",
+    icon: IconUsers
+  },
+  {
+    title: "Flexible, developer-first culture",
+    description: "Remote-friendly with a collaborative SF hub. High trust, true ownership, and the flexibility to work where and how you do your best work.",
+    icon: IconHeart
+  }
+];
 
 	const openings: JobOpening[] = [
 		// Engineering
@@ -121,78 +121,82 @@
 	];
 
 	const employeeTestimonials = [
-		{
-			name: "Michael Chen",
-			position: "Senior Developer",
-			company: "Engineering Team",
-			quote:
-				"Working here has given me the opportunity to tackle challenging problems while maintaining a healthy work-life balance. The team culture is supportive and collaborative.",
-			image:
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Priya Sharma",
-			position: "Product Designer",
-			company: "Design Team",
-			quote:
-				"The creative freedom and opportunity to influence product decisions makes this the best place I've ever worked. I'm constantly learning and growing.",
-			image:
-				"https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Marcus Johnson",
-			position: "Marketing Lead",
-			company: "Marketing Team",
-			quote:
-				"I joined three years ago and have grown tremendously. The leadership truly invests in your development and the work environment is both challenging and supportive.",
-			image:
-				"https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		}
-	];
+  {
+    name: "David Zhang",
+    position: "Senior Software Engineer",
+    company: "Engineering Team",
+    quote:
+      "Archil is a place where technical curiosity is valued. I get to work on real scaling challenges with team members who genuinely care about each other's growth. Every day brings opportunities to push boundaries and learn something new.",
+    image: "/generated/image-an-asian-male-senior-engineer-in-a-moder.webp"
+  },
+  {
+    name: "Aarti Patel",
+    position: "Product Designer",
+    company: "Product & Design",
+    quote:
+      "I love how much trust and ownership I have in my work here. From day one, my ideas have shaped our products, and I always feel supported creatively. The company's openness to feedback is unmatched — we build together as a team.",
+    image: "/generated/image-an-indian-female-product-designer-immers.webp"
+  },
+  {
+    name: "Jamal Thompson",
+    position: "Marketing Coordinator",
+    company: "Growth & Marketing",
+    quote:
+      "Joining Archil early in my career, I felt welcomed right away. The mentorship and energy here make an enormous difference. Everyone is approachable and collaborative, and I always feel like my contributions matter.",
+    image: "/generated/image-a-black-junior-marketing-team-member-eit.webp"
+  }
+];
 
 	const processSteps = [
-		{
-			step: 1,
-			title: "Apply",
-			description:
-				"Submit your application through our careers portal with your resume and portfolio."
-		},
-		{
-			step: 2,
-			title: "Interview",
-			description: "Meet with our team to discuss your experience, skills, and career aspirations."
-		},
-		{
-			step: 3,
-			title: "Welcome aboard",
-			description: "Join our team and start your journey building the future with us."
-		}
-	];
+  {
+    step: 1,
+    title: "Apply in minutes",
+    description: "Send a quick intro and resume—no long forms or portals."
+  },
+  {
+    step: 2,
+    title: "Intro conversation",
+    description: "A short video call to get to know each other and discuss what excites you about Archil."
+  },
+  {
+    step: 3,
+    title: "Technical or problem-solving session",
+    description: "Walk through a relevant challenge or explore your technical thinking with a team member."
+  },
+  {
+    step: 4,
+    title: "Meet the team",
+    description: "Chat with founders or future teammates to learn about our culture, ways of working, and growth paths."
+  },
+  {
+    step: 5,
+    title: "Decision",
+    description: "We aim to make decisions within a week and always give you transparent feedback."
+  }
+];
 
 	const values = [
-		{
-			icon: IconHeart,
-			title: "Passion",
-			description: "We're driven by a shared passion for innovation and excellence."
-		},
-		{
-			icon: IconUsers,
-			title: "Collaboration",
-			description: "We believe in teamwork and collaboration to achieve great things."
-		},
-		{
-			icon: IconGlobe,
-			title: "Global Impact",
-			description: "We're committed to making a positive impact on the world."
-		}
-	];
+  {
+    title: "Speed with thoughtfulness",
+    description: "We move quickly to solve hard problems but never sacrifice stability or trust in our systems or each other."
+  },
+  {
+    title: "No bureaucracy",
+    description: "Less process, more building. Every voice matters—engineering, design, and customer input shape our product."
+  },
+  {
+    title: "Radical clarity",
+    description: "We value ownership, transparency, and direct communication—even when it's hard. Everyone is empowered to take initiative."
+  }
+];
 </script>
 
 <!-- Hero Section -->
 
 <SecondaryHero
-	title="Join our team of innovators"
-	subtitle="We're looking for passionate people to help us build the future of digital experiences. Discover your next opportunity with us."
+	title="The future of active data is built together"
+	subtitle="Join a collaborative team where big challenges fuel real growth and everyone has a seat at the table. Shape how the cloud works for developers, data scientists, and innovators everywhere."
+	imageSrc="/generated/image-a-diverse-and-collaborative-team-working.webp"
 />
 
 <!-- Why Join Us Section -->
